@@ -13,29 +13,29 @@ This is a Laravel application designed to monitor scraping jobs from various sou
 
 ## Installation
 
-
+##Setup commands
 composer install
 cp .env.example .env
 
-## Generate Key
+##Generate Key
 php artisan key:generate
 
-## Generate Necessary Tables
+##Generate necessary tables
 artisan queue:table
 
-## Run Migrations
+##Run migrations
 php artisan migrate
 
-## Seed Database
+##Seed the database
 php artisan db:seed
 
-## Queue Job manually
+##Queue the scraping job manually
 php artisan scrape:queue
 
-## Start queue worker
+##Start the queue worker
 php artisan queue:work
 
-## Notes
+##Notes
 
 The application is set up to run the scraping jobs every 10 minutes via a cron job.
 
